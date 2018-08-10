@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ЛенФильм.Тв</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <script type="text/javascript">
+    function test() {
+        $('profile-img-container-menu>img').toggleClass('cls-2');
+        if (screen.width > '768') {
+            document.location.href = "chrono-feed-desktop.html";
+        }
+        
+        if (screen.width <= '768') {
+            document.location.href = "chrono.html";      
+        }
+    };
+    function test2() {
+        if (screen.width > '768') {
+            document.location.href = "actors-feed-desktop.html";
+        }
+        
+        if (screen.width <= '768') {
+            document.location.href = "actors.html";      
+        }
+    };
+    </script>
+</head>
+<body>
+
+<div class="container bg-container"></div>
+<div class="container bg-container-search"></div>
+ <!-- не войденный проф  -->
+<!-- <div class="container sidebar-container">
+   <div class="profile-container">
+       <div class="profile-container__preview">
+            <div class="profile-img-container">
+                <img src="assets/img/avatar.svg">
+            </div>
+           <h2>Гость</h2>
+       </div>
+        <div class="profile-container-menu">
+            <ul>
+                <li>
+                    <div class="profile-container-menu__item">
+                        <div class="profile-img-container-menu">
+                            <img src="assets/img/clapperboard.svg">
+                        </div>
+                        <div>
+                            <span class="choosen">Фильм</span>                                
+                        </div>
+                    </div>  
+                </li>
+                <li>
+                    <a href="">
+                        <div class="profile-container-menu__item">
+                            <div class="profile-img-container-menu">
+                                <img src="assets/img/television.svg">
+                            </div>
+                            <span>Сериалы</span>
+                        </div>  
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="profile-container-menu__item">
+                            <div class="profile-img-container-menu">   
+                                <img src="assets/img/new.svg">
+                            </div>    
+                            <span>Новинки</span>
+                        </div>  
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="profile-container-menu__item">
+                            <div class="profile-img-container-menu">
+                                <img src="assets/img/star.svg">
+                            </div>    
+                            <span>Топ</span>
+                        </div>  
+                    </a>
+                </li>
+                <li>
+                    <a href="genres.html">
+                        <div class="profile-container-menu__item">
+                            <div class="profile-img-container-menu">
+                                <img src="assets/img/theatre.svg">
+                            </div>    
+                            <span>Жанры</span>
+                        </div>  
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="profile-container-menu__item">
+                            <div class="profile-img-container-menu">
+                                <img src="assets/img/2-squares.svg">
+                            </div>    
+                            <span>Категории</span>
+                        </div>  
+                    </a>
+                </li>
+                <li onclick="test()">
+                    <div class="profile-container-menu__item">
+                        <div class="profile-img-container-menu">
+                            <img src="assets/img/stopwatch.svg">
+                        </div>
+                        <span>Хронология</span>
+                    </div>  
+                </li>
+                <li onclick="test2()">
+                    <div class="profile-container-menu__item">
+                        <div class="profile-img-container-menu">
+                            <img src="assets/img/avatar.svg">
+                        </div>    
+                        <span>Актеры</span>
+                    </div>  
+                </li>                                                                                        
+            </ul>
+       </div>
+       <div class="reg-container">
+           <div class="reg-container__form">
+                <button class="reg-btn">Вход</button>
+                <button onclick="test3()" class="reg-btn">Регистрация</button>
+           </div>
+           <div class="reg-container__forgotp">
+                <a href="" class="forgot-password">Забыли пароль ?</a>
+           </div>
+       </div>
+   </div>
+</div> -->
+
+<!-- войденный проф -->
+<div class="container sidebar-container">
+   <div class="profile-container">
+        <a href="profile.html">
+            <div class="profile-container__preview">
+                <div class="profile-img-container">
+                    <img src="assets/img/profile-logo.png">
+                </div>
+                <div class="profile-info-container" >
+                    <h3 class="profile-info-container__name">Nickname123456789</h3>
+                    <span>Подписки: <span class="profile-info-container__subs">254</span></span>
+                </div>
+            </div>
+        </a>    
+        <div class="profile-container-menu">
+            <ul>
+                <li>
+                    <div class="profile-container-menu__item">
+                        <div class="profile-img-container-menu">
+                            <img src="assets/img/clapperboard.svg">
+                        </div>
+                        <div>
+                            <span style="color: #cb0a1d;">Фильм</span>                                
+                        </div>
+                    </div>  
+                </li>
+                <li>
+                    <a href="">
+                        <div class="profile-container-menu__item">
+                            <div class="profile-img-container-menu">
+                                <img src="assets/img/television.svg">
+                            </div>
+                            <span>Сериалы</span>
+                        </div>  
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="profile-container-menu__item">
+                            <div class="profile-img-container-menu">   
+                                <img src="assets/img/new.svg">
+                            </div>    
+                            <span>Новинки</span>
+                        </div>  
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="profile-container-menu__item">
+                            <div class="profile-img-container-menu">
+                                <img src="assets/img/star.svg">
+                            </div>    
+                            <span>Топ</span>
+                        </div>  
+                    </a>
+                </li>
+                <li>
+                    <a href="genres.html">
+                        <div class="profile-container-menu__item">
+                            <div class="profile-img-container-menu">
+                                <img src="assets/img/theatre.svg">
+                            </div>    
+                            <span>Жанры</span>
+                        </div>  
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <div class="profile-container-menu__item">
+                            <div class="profile-img-container-menu">
+                                <img src="assets/img/2-squares.svg">
+                            </div>    
+                            <span>Категории</span>
+                        </div>  
+                    </a>
+                </li>
+                <li onclick="test()">
+                    <div class="profile-container-menu__item">
+                        <div class="profile-img-container-menu">
+                            <img src="assets/img/stopwatch.svg">
+                        </div>
+                        <span>Хронология</span>
+                    </div>  
+                </li>
+                <li onclick="test2()">
+                    <div class="profile-container-menu__item">
+                        <div class="profile-img-container-menu">
+                            <img src="assets/img/avatar.svg">
+                        </div>    
+                        <span>Актеры</span>
+                    </div>  
+                </li>                                                                                        
+            </ul>
+       </div>
+       <div class="info-container">
+            <div class="info-container-links">
+                <div class="info-container-links__item">
+                    <img class="links-logo" src="assets/img/vk-logo.svg">
+                    <span class="links-text">Наша группа вконтакте</span>
+                </div>
+                <div class="info-container-links__item">
+                    <img class="links-logo" src="assets/img/vk-logo.svg">
+                    <span class="links-text">Наша группа вконтакте</span>
+                </div>                    
+            </div>
+            <div class="info-container-btn">
+                <button class="reg-btn">Выход</button>
+            </div> 
+       </div>
+   </div>
+</div>
+
+
+<header>
+    <div class="container header-container">
+        <div class="header-container__item">
+            <img src="assets/img/menu-icon.svg" alt="Меню" class="header__icon header__menu">
+            <img src="assets/img/nav-logo.png" alt="Логотип" class="header__logo">
+        </div>
+        <div class="header-container__item">
+            <img src="assets/img/search-icon.svg" alt="Поиск" class="header__icon header__search">
+        </div>
+    </div>
+</header>
+
+<header>
+    <div class="container header-container2">
+        <div class="header-container2__img">
+            <img class="header-logo2" src="assets/img/nav-logo.png">
+        </div>
+        <div class="header-container2__navbar">
+            <a href="">
+                <div class="navbar__item2">
+                    <img class="navbar__img2" src="assets/img/play-icon.svg">
+                    <span class="navbar__name2">Фильм</span>
+                </div>
+            </a> 
+            <a href="">  
+                <div class="navbar__item2">
+                    <img class="navbar__img2" src="assets/img/like-icon.svg">
+                    <span class="navbar__name2">Подписки</span>
+                </div>
+            </a>
+            <a href="">     
+                <div class="navbar__item2">
+                    <img class="navbar__img2" src="assets/img/history-icon.svg">
+                    <span class="navbar__name2">История</span>
+                </div>
+            </a>
+            <a href="">    
+                <div class="navbar__item2">
+                    <img class="navbar__img2" src="assets/img/fav-icon.svg">
+                    <span class="navbar__name2">Закладки</span>
+                </div> 
+            </a>    
+        </div>
+        <div class="header-container2__search">
+                <input class="search-input" type="text" name="" placeholder="Поиск">           
+        </div>    
+    </div>
+</header>
+
+
+
+
+
+<div class="container search-container">  
+    <input class="search-input" type="text" name="" placeholder="Поиск">
+</div> 
+<div class="desktop-menu-mq">    
+    <div class="left-menu-mq data-sticky-container">
+           <div class="profile-container selector">
+                <a href="profile.html">
+                    <div class="profile-container__preview">
+                        <div class="profile-img-container">
+                            <img src="assets/img/profile-logo.png">
+                        </div>
+                        <div class="profile-info-container" >
+                            <h3 class="profile-info-container__name">Nickname123456789</h3>
+                            <span>Подписки: <span class="profile-info-container__subs">254</span></span>
+                        </div>
+                    </div>
+                </a>    
+                <div class="profile-container-menu">
+                    <ul>
+                        <li>
+                            <a href="index.html" class="">
+                                <div class="profile-container-menu__item">
+                                    <div class="profile-img-container-menu">
+                                        <img src="assets/img/clapperboard.svg">
+                                    </div>
+                                    <div>
+                                        <span class="choosen">Фильм</span>                                
+                                    </div>
+                                </div>  
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="profile-container-menu__item">
+                                    <div class="profile-img-container-menu">
+                                        <img src="assets/img/television.svg">
+                                    </div>
+                                    <span>Сериалы</span>
+                                </div>  
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="profile-container-menu__item">
+                                    <div class="profile-img-container-menu">   
+                                        <img src="assets/img/new.svg">
+                                    </div>    
+                                    <span>Новинки</span>
+                                </div>  
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="profile-container-menu__item">
+                                    <div class="profile-img-container-menu">
+                                        <img src="assets/img/star.svg">
+                                    </div>    
+                                    <span>Топ</span>
+                                </div>  
+                            </a>
+                        </li>
+                        <li>
+                            <a href="genres.html">
+                                <div class="profile-container-menu__item">
+                                    <div class="profile-img-container-menu">
+                                        <img src="assets/img/theatre.svg">
+                                    </div>    
+                                    <span>Жанры</span>
+                                </div>  
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="profile-container-menu__item">
+                                    <div class="profile-img-container-menu">
+                                        <img src="assets/img/2-squares.svg">
+                                    </div>    
+                                    <span>Категории</span>
+                                </div>  
+                            </a>
+                        </li>
+                        <li onclick="test()">
+                            <div class="profile-container-menu__item">
+                                <div class="profile-img-container-menu">
+                                    <img src="assets/img/stopwatch.svg">
+                                </div>
+                                <span>Хронология</span>
+                            </div>  
+                        </li>
+                        <li onclick="test2()">
+                            <div class="profile-container-menu__item">
+                                <div class="profile-img-container-menu">
+                                    <img src="assets/img/avatar.svg">
+                                </div>    
+                                <span>Актеры</span>
+                            </div>  
+                        </li>                                                                                        
+                    </ul>
+               </div>
+               <div class="info-container">
+                    <div class="info-container-links">
+                        <div class="info-container-links__item">
+                            <img class="links-logo" src="assets/img/vk-logo.svg">
+                            <span class="links-text">Наша группа вконтакте</span>
+                        </div>
+                        <div class="info-container-links__item">
+                            <img class="links-logo" src="assets/img/vk-logo.svg">
+                            <span class="links-text">Наша группа вконтакте</span>
+                        </div>                    
+                    </div>
+                    <div class="info-container-btn">
+                        <button class="reg-btn">Выход</button>
+                    </div> 
+               </div>
+       </div>
+    </div>
+
+    <div class="right-menu-mq">
+        <div class="container adv-container">
+            <img src="assets/img/adv-logo.png" alt="Реклама" class="adv-logo">
+        </div>
+        <div class="container genre-container-mq">   
+            <ul>
+                <li>
+                    <a href="" class="genre-container__link">
+                        <div class="genre-container__item">
+                            <span class="genre-container__name">1990</span>
+                            <span class="genre-container__number">999</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="genre-container__link">
+                        <div class="genre-container__item">
+                            <span class="genre-container__name">1990</span>
+                            <span class="genre-container__number">999</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="genre-container__link">
+                        <div class="genre-container__item">
+                            <span class="genre-container__name">1990</span>
+                            <span class="genre-container__number">999</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="genre-container__link">
+                        <div class="genre-container__item">
+                            <span class="genre-container__name">1990</span>
+                            <span class="genre-container__number">999</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="genre-container__link">
+                        <div class="genre-container__item">
+                            <span class="genre-container__name">1990</span>
+                            <span class="genre-container__number">999</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="genre-container__link">
+                        <div class="genre-container__item">
+                            <span class="genre-container__name">1990</span>
+                            <span class="genre-container__number">999</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="genre-container__link">
+                        <div class="genre-container__item">
+                            <span class="genre-container__name">1990</span>
+                            <span class="genre-container__number">999</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="genre-container__link">
+                        <div class="genre-container__item">
+                            <span class="genre-container__name">1990</span>
+                            <span class="genre-container__number">999</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="genre-container__link">
+                        <div class="genre-container__item">
+                            <span class="genre-container__name">1990</span>
+                            <span class="genre-container__number">999</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="genre-container__link">
+                        <div class="genre-container__item">
+                            <span class="genre-container__name">1990</span>
+                            <span class="genre-container__number">999</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="genre-container__link">
+                        <div class="genre-container__item">
+                            <span class="genre-container__name">1990</span>
+                            <span class="genre-container__number">999</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="genre-container__link">
+                        <div class="genre-container__item">
+                            <span class="genre-container__name">1990</span>
+                            <span class="genre-container__number">999</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>                                                                                                            
+        </div>
+
+
+        <div class="container  year-container">   
+                            <div class="year-col">
+                                <a href="about-film-desktop.html" class="genre-container__link">
+                                    <div class="genre-container__item">
+                                        <span class="genre-container__name">1990</span>
+                                        <span class="genre-container__number">999</span>
+                                    </div>
+                                </a>
+                                <a href="about-film-desktop.html" class="genre-container__link">
+                                    <div class="genre-container__item">
+                                        <span class="genre-container__name">1990</span>
+                                        <span class="genre-container__number">999</span>
+                                    </div>
+                                </a>
+                                <a href="about-film-desktop.html" class="genre-container__link">
+                                    <div class="genre-container__item">
+                                        <span class="genre-container__name">1990</span>
+                                        <span class="genre-container__number">999</span>
+                                    </div>
+                                </a>
+                                <a href="about-film-desktop.html" class="genre-container__link">
+                                    <div class="genre-container__item">
+                                        <span class="genre-container__name">1990</span>
+                                        <span class="genre-container__number">999</span>
+                                    </div>
+                                </a>
+                            </div>    
+                            <div class="year-col">
+                                <a href="about-film-desktop.html" class="genre-container__link">
+                                    <div class="genre-container__item">
+                                        <span class="genre-container__name">1990</span>
+                                        <span class="genre-container__number">999</span>
+                                    </div>
+                                </a>
+                                <a href="about-film-desktop.html" class="genre-container__link">
+                                    <div class="genre-container__item">
+                                        <span class="genre-container__name">1990</span>
+                                        <span class="genre-container__number">999</span>
+                                    </div>
+                                </a>
+                                <a href="about-film-desktop.html" class="genre-container__link">
+                                    <div class="genre-container__item">
+                                        <span class="genre-container__name">1990</span>
+                                        <span class="genre-container__number">999</span>
+                                    </div>
+                                </a>
+                                <a href="about-film-desktop.html" class="genre-container__link">
+                                    <div class="genre-container__item g1">
+                                        <span class="genre-container__name">1990</span>
+                                        <span class="genre-container__number">999</span>
+                                    </div>
+                                </a>
+                            </div>  
+                            <div class="year-col">
+                                <a href="about-film-desktop.html" class="genre-container__link">
+                                    <div class="genre-container__item g2">
+                                        <span class="genre-container__name">1990</span>
+                                        <span class="genre-container__number">999</span>
+                                    </div>
+                                </a>
+                                <a href="about-film-desktop.html" class="genre-container__link">
+                                    <div class="genre-container__item">
+                                        <span class="genre-container__name">1990</span>
+                                        <span class="genre-container__number">999</span>
+                                    </div>
+                                </a>
+                                <a href="about-film-desktop.html" class="genre-container__link">
+                                    <div class="genre-container__item">
+                                        <span class="genre-container__name">1990</span>
+                                        <span class="genre-container__number">999</span>
+                                    </div>
+                                </a>
+                                <a href="about-film-desktop.html" class="genre-container__link">
+                                    <div class="genre-container__item">
+                                        <span class="genre-container__name">1990</span>
+                                        <span class="genre-container__number">999</span>
+                                    </div>
+                                </a>
+                            </div>    
+                            <div class="year-col">
+                                <a href="about-film-desktop.html" class="genre-container__link">
+                                    <div class="genre-container__item">
+                                        <span class="genre-container__name">1990</span>
+                                        <span class="genre-container__number">999</span>
+                                    </div>
+                                </a>
+                                <a href="about-film-desktop.html" class="genre-container__link">
+                                    <div class="genre-container__item">
+                                        <span class="genre-container__name">1990</span>
+                                        <span class="genre-container__number">999</span>
+                                    </div>
+                                </a>
+                                <a href="about-film-desktop.html" class="genre-container__link">
+                                    <div class="genre-container__item">
+                                        <span class="genre-container__name">1990</span>
+                                        <span class="genre-container__number">999</span>
+                                    </div>
+                                </a>
+                                <a href="about-film-desktop.html" class="genre-container__link">
+                                    <div class="genre-container__item">
+                                        <span class="genre-container__name">1990</span>
+                                        <span class="genre-container__number">999</span>
+                                    </div>
+                                </a>
+                            </div>                                                                                                               
+        </div>
+
+
+        <div class="container timetable-container">
+            <div style="display: flex; justify-content: center;">    
+                <span class="timetable-container__text">Расписание выхода серий на сегодня 
+                <span class="timetable-container__date">(14.07.2018)</span></span>
+            </div>
+            <div class="timetable-container-mq">
+                <div class="timetable-container-mq__item timetable-left">
+                    <div class="timetable-container__item">
+                        <span class="timetable-container__name">Ducktales/Утиные истории</span>
+                        <span class="timetable-container__season">1 сезон</span>
+                        <span class="timetable-container__series">18 серия - Who is Gizmoduck?!</span>
+                    </div>
+                    <div class="timetable-container__item">
+                        <span class="timetable-container__name">Ducktales/Утиные истории</span>
+                        <span class="timetable-container__season">1 сезон</span>
+                        <span class="timetable-container__series">18 серия - Who is Gizmoduck?!</span>
+                    </div>
+                    <div class="timetable-container__item">
+                        <span class="timetable-container__name">Ducktales/Утиные истории</span>
+                        <span class="timetable-container__season">1 сезон</span>
+                        <span class="timetable-container__series">18 серия - Who is Gizmoduck?!</span>
+                    </div>
+                    <div class="timetable-container__item">
+                        <span class="timetable-container__name">Ducktales/Утиные истории</span>
+                        <span class="timetable-container__season">1 сезон</span>
+                        <span class="timetable-container__series">18 серия - Who is Gizmoduck?!</span>
+                    </div>
+                    <div class="timetable-container__item">
+                        <span class="timetable-container__name">Ducktales/Утиные истории</span>
+                        <span class="timetable-container__season">1 сезон</span>
+                        <span class="timetable-container__series">18 серия - Who is Gizmoduck?!</span>
+                    </div>                                     
+                </div>
+                <div class="timetable-container-mq__item timetable-right">
+                    <div class="timetable-container__item">
+                        <span class="timetable-container__name">Ducktales/Утиные истории</span>
+                        <span class="timetable-container__season">1 сезон</span>
+                        <span class="timetable-container__series">18 серия - Who is Gizmoduck?!</span>
+                    </div>
+                    <div class="timetable-container__item">
+                        <span class="timetable-container__name">Ducktales/Утиные истории</span>
+                        <span class="timetable-container__season">1 сезон</span>
+                        <span class="timetable-container__series">18 серия - Who is Gizmoduck?!</span>
+                    </div>
+                    <div class="timetable-container__item">
+                        <span class="timetable-container__name">Ducktales/Утиные истории</span>
+                        <span class="timetable-container__season">1 сезон</span>
+                        <span class="timetable-container__series">18 серия - Who is Gizmoduck?!</span>
+                    </div>
+                    <div class="timetable-container__item">
+                        <span class="timetable-container__name">Ducktales/Утиные истории</span>
+                        <span class="timetable-container__season">1 сезон</span>
+                        <span class="timetable-container__series">18 серия - Who is Gizmoduck?!</span>
+                    </div>
+                    <div class="timetable-container__item">
+                        <span class="timetable-container__name">Ducktales/Утиные истории</span>
+                        <span class="timetable-container__season">1 сезон</span>
+                        <span class="timetable-container__series">18 серия - Who is Gizmoduck?!</span>
+                    </div>                                          
+                </div>                
+            </div>          
+        </div>    
+    </div>    
+</div>
+
+    <div class="navbar" style="flex-grow: 0;">
+        <a href="">
+            <div class="navbar__item">
+                <img class="navbar__img" src="assets/img/play-icon.svg">
+                <span class="navbar__name">Фильм</span>
+            </div>
+        </a>
+        <a href="">    
+            <div class="navbar__item">
+                <img class="navbar__img" src="assets/img/like-icon.svg">
+                <span class="navbar__name">Подписки</span>
+            </div>
+        </a>
+        <a href="">    
+            <div class="navbar__item">
+                <img class="navbar__img" src="assets/img/history-icon.svg">
+                <span class="navbar__name">История</span>
+            </div>
+        </a>
+        <a href="">    
+            <div class="navbar__item" style="">
+                <img class="navbar__img" src="assets/img/fav-icon.svg">
+                <span class="navbar__name">Закладки</span>
+            </div>
+        </a>              
+    </div>    
+
+
+<script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/scripts/script.js" ></script>
+<script type="text/javascript" src="assets/scripts/sticky.min.js" ></script>
+</body>
+</html>
