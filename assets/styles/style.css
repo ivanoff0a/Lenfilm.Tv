@@ -92,6 +92,20 @@ button, a, input {
 	background-color: white;
 }
 
+.navbar-1024px {
+	position: fixed;
+	bottom: 0;
+	flex-grow: 0;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	box-shadow: 0 0 8px 5px rgba(221, 221, 221, 1);
+	margin-top: 20px;
+	width: 100%;
+	z-index: 150;
+	background-color: white;	
+}
+
 .navbar__item {
 	display: flex;
 	flex-direction: column;
@@ -364,6 +378,14 @@ button, a, input {
 }
 
 .header-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.header-container-1024px {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -1057,6 +1079,14 @@ button, a, input {
 	width: 150px;		
 }
 
+@media screen and (min-width: 320px) {
+	.under-1024px {
+		display: block;
+	}
+	.above-1024px {
+		display: none;
+	}	
+}
 /*Media Queries*/
 
 @media screen and (max-width: 767px) {
@@ -1268,6 +1298,18 @@ button, a, input {
 	.main-content-container {
 		margin-bottom: 20px;
 	}
+	.header-container-1024px {
+		display: none
+	}
+	.navbar-1024px {
+		display: none;
+	}
+	.under-1024px {
+		display: none;
+	}
+	.above-1024px {
+		display: block;
+	}	
 }
 
 @media screen and (min-width: 1440px) {
