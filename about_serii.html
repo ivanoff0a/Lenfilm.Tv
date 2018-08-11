@@ -7,7 +7,6 @@
     <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
     <script type="text/javascript">
     function test() {
-        $('profile-img-container-menu>img').toggleClass('cls-2');
         if (screen.width > '768') {
             document.location.href = "chrono-feed-desktop.html";
         }
@@ -277,7 +276,7 @@
                 <div class="star-container">
                     <img src="assets/img/star-rate.svg">
                     <span>1/10</span>
-                    <button class="profile-btn sub">Подписаться</button>  
+                    <button class="sub">Подписаться</button>  
                 </div>
                 <div>
                     <span class="bold-info">Длительность: </span><span class="plain-info">01:14:03</span>
@@ -294,13 +293,13 @@
                         <span>приключения</span>
                     </div>
                     <div class="round-container__item">
-                        <span>приключения</span>
+                        <span>боевики</span>
                     </div>
                 </div>
                 <div class="round-container">
                     <span class="bold-info">Режиссер: </span>
                     <div class="round-container__item">
-                        <span>приключения</span>
+                        <span>Квентин Тарантино</span>
                     </div>
                 </div>          
             </div>
@@ -308,30 +307,27 @@
         <div class="roles-container">
             <div class="round-container">
                 <span class="bold-info">В ролях </span>
-                <div class="round-container__item">
-                    <span>приключения</span>
-                </div>
-                <div class="round-container__item">
-                    <span>приключения</span>
-                </div>
-                <div class="round-container__item">
-                    <span>приключения</span>
-                </div>
-                <div class="round-container__item">
-                    <span>приключения</span>
-                </div>
-                <div class="round-container__item">
-                    <span>приключения</span>
-                </div>
-                <div class="round-container__item">
-                    <span>приключения</span>
-                </div>
-                <div class="round-container__item">
-                    <span>приключения</span>
-                </div>
-                <div class="round-container__item">
-                    <span>приключения</span>
-                </div>
+                            <div class="round-container__item">
+                                <span>Стив Диаспра</span>
+                            </div>
+                            <div class="round-container__item">
+                                <span>Марк Уорнер</span>
+                            </div>
+                            <div class="round-container__item">
+                                <span>Николас Олсон</span>
+                            </div>
+                            <div class="round-container__item">
+                                <span>Стив Диаспра</span>
+                            </div>
+                            <div class="round-container__item">
+                                <span>Марк Уорнер</span>
+                            </div>
+                            <div class="round-container__item">
+                                <span>Николас Олсон</span>
+                            </div>
+                            <div class="round-container__item">
+                                <span>Стив Диаспра</span>
+                            </div> 
             </div>          
         </div>    
         <div class="movie-container__update movie-container__update2">
@@ -348,7 +344,7 @@
         <div class="tab other-tab">
             <span>Описание</span>
             <div class="tab-content">
-            <span class="bold-info">Описание. </span><span class="plain-info">Восточная Европа, 1944 год. После удачного наступления hgfgggggудачного наступления удачного наступления удачного наступления удачного наступления удачного наступления удачного наступления удачного наступления удачного наступления удачного наступления удачного наступления удачного наступления удачного наступления удачного наступления</span>
+            <span class="bold-info">Описание. </span><span class="plain-info">Восточная Европа, 1944 год. После удачного наступления, разрушения немецкой дамбы, у союзных войск появляется информация о месторасположении секретных ключей шифрования, захват которых может обеспечить преимущество над врагом и приблизить окончание войны. Цель проста: уничтожить разрозненные отряды противника и выжить.</span>
             </div>
         </div>
         <div class="tab center-tab">
@@ -664,32 +660,36 @@
         </div>
     </div>
 
-        <div class="navbar" style="flex-grow: 0;">
-            <a href="">
-                <div class="navbar__item">
-                    <img class="navbar__img" src="assets/img/play-icon.svg">
-                    <span class="navbar__name">Фильм</span>
-                </div>
-            </a>
-            <a href="">    
-                <div class="navbar__item">
+    <div class="navbar" style="flex-grow: 0;">
+        <a href="">
+            <div class="navbar__item">
+                <img class="navbar__img" src="assets/img/play-icon.svg">
+                <span class="navbar__name">Фильм</span>
+            </div>
+        </a>
+        <a href="">    
+            <div class="navbar__item">
+                <div class="bubble-container">
                     <img class="navbar__img" src="assets/img/like-icon.svg">
-                    <span class="navbar__name">Подписки</span>
+                    <div class="bubble-container__item">2</div>                    
                 </div>
-            </a>
-            <a href="">    
-                <div class="navbar__item">
-                    <img class="navbar__img" src="assets/img/history-icon.svg">
-                    <span class="navbar__name">История</span>
-                </div>
-            </a>
-            <a href="">    
-                <div class="navbar__item" style="">
-                    <img class="navbar__img" src="assets/img/fav-icon.svg">
-                    <span class="navbar__name">Закладки</span>
-                </div>
-            </a>              
-        </div>  
+                <span class="navbar__name">Подписки</span>
+            </div>
+        </a>
+        <a href="">    
+            <div class="navbar__item">
+                <img class="navbar__img" src="assets/img/history-icon.svg">
+                <span class="navbar__name">История</span>
+            </div>
+        </a>
+        <a href="">    
+            <div class="navbar__item" style="">
+                <img class="navbar__img" src="assets/img/fav-icon.svg">
+                <span class="navbar__name">Закладки</span>
+            </div>
+        </a>              
+    </div>    
+ 
 </div>
 <div class="above-768px">
 
@@ -707,7 +707,10 @@
             </a> 
             <a href="">  
                 <div class="navbar__item2">
-                    <img class="navbar__img2" src="assets/img/like-icon.svg">
+                    <div class="bubble-container2">
+                        <img class="navbar__img2" src="assets/img/like-icon.svg">
+                        <div class="bubble-container2__item">2</div>                    
+                    </div>
                     <span class="navbar__name2">Подписки</span>
                 </div>
             </a>
@@ -724,15 +727,16 @@
                 </div> 
             </a>    
         </div>
-        <div class="header-container2__search-input-desk">
+        <div class="header-container2__search">
                 <input class="search-input" type="text" name="" placeholder="Поиск">           
         </div>    
     </div>
 </header>
 <div class="desktop-menu-mq desktop-about">
+    
     <div class="left-menu-mq">
-           <div class="profile-container">
-            <a href="profile-desktop.html">
+           <div class="profile-container-fixed">
+            <a href="profile.html">
                <div class="profile-container__preview">
                     <div class="profile-img-container">
                         <img src="assets/img/profile-logo.png">
@@ -860,7 +864,7 @@
                     <div class="star-container">
                         <img src="assets/img/star-rate.svg">
                         <span>1/10</span>
-                        <button class="profile-btn sub">Подписаться</button>
+                        <button class="sub">Подписаться</button>
                     </div>     
                 </div>
                 <div class="main-info-container__row-info">

@@ -320,7 +320,7 @@
         </div>
     </div>
     </div>
-    <div class="navbar">
+    <div class="navbar" style="flex-grow: 0;">
         <a href="">
             <div class="navbar__item">
                 <img class="navbar__img" src="assets/img/play-icon.svg">
@@ -329,7 +329,10 @@
         </a>
         <a href="">    
             <div class="navbar__item">
-                <img class="navbar__img" src="assets/img/like-icon.svg">
+                <div class="bubble-container">
+                    <img class="navbar__img" src="assets/img/like-icon.svg">
+                    <div class="bubble-container__item">2</div>                    
+                </div>
                 <span class="navbar__name">Подписки</span>
             </div>
         </a>
@@ -340,12 +343,13 @@
             </div>
         </a>
         <a href="">    
-            <div class="navbar__item">
+            <div class="navbar__item" style="">
                 <img class="navbar__img" src="assets/img/fav-icon.svg">
                 <span class="navbar__name">Закладки</span>
             </div>
         </a>              
     </div>    
+   
 </div>
 <div class="above-768px">
 <header>
@@ -362,7 +366,10 @@
             </a> 
             <a href="">  
                 <div class="navbar__item2">
-                    <img class="navbar__img2" src="assets/img/like-icon.svg">
+                    <div class="bubble-container2">
+                        <img class="navbar__img2" src="assets/img/like-icon.svg">
+                        <div class="bubble-container2__item">2</div>                    
+                    </div>
                     <span class="navbar__name2">Подписки</span>
                 </div>
             </a>
@@ -379,13 +386,13 @@
                 </div> 
             </a>    
         </div>
-        <div class="header-container2__search-input-desk">
+        <div class="header-container2__search">
                 <input class="search-input" type="text" name="" placeholder="Поиск">           
         </div>    
     </div>
 </header>
 <div class="desktop-menu-mq">
-    <div class="left-menu-mq">
+    <div class="left-menu-100vh">
            <div class="profile-container">
            <div class="profile-container__preview">
                 <div class="profile-img-container">

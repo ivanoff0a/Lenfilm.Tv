@@ -275,7 +275,10 @@
             </a> 
             <a href="">  
                 <div class="navbar__item2">
-                    <img class="navbar__img2" src="assets/img/like-icon.svg">
+                    <div class="bubble-container2">
+                        <img class="navbar__img2" src="assets/img/like-icon.svg">
+                        <div class="bubble-container2__item">2</div>                    
+                    </div>
                     <span class="navbar__name2">Подписки</span>
                 </div>
             </a>
@@ -304,7 +307,7 @@
 </div> 
 
 <div class="desktop-menu-mq">
-        <div class="left-menu-mq">
+        <div class="left-menu-100vh">
                 <div class="profile-container">
                 <a href="profile.html">
                     <div class="profile-container__preview">
@@ -546,32 +549,36 @@
     </div>
 
 
-<div class="container navbar">
-    <a href="">
-        <div class="navbar__item">
-            <img class="navbar__img" src="assets/img/play-icon.svg">
-            <span class="navbar__name">Фильм</span>
-        </div>
-    </a>
-    <a href="">    
-        <div class="navbar__item">
-            <img class="navbar__img" src="assets/img/like-icon.svg">
-            <span class="navbar__name">Подписки</span>
-        </div>
-    </a>
-    <a href="">    
-        <div class="navbar__item">
-            <img class="navbar__img" src="assets/img/history-icon.svg">
-            <span class="navbar__name">История</span>
-        </div>
-    </a>
-    <a href="">    
-        <div class="navbar__item">
-            <img class="navbar__img" src="assets/img/fav-icon.svg">
-            <span class="navbar__name">Закладки</span>
-        </div>
-    </a>              
-</div>
+    <div class="navbar" style="flex-grow: 0;">
+        <a href="">
+            <div class="navbar__item">
+                <img class="navbar__img" src="assets/img/play-icon.svg">
+                <span class="navbar__name">Фильм</span>
+            </div>
+        </a>
+        <a href="">    
+            <div class="navbar__item">
+                <div class="bubble-container">
+                    <img class="navbar__img" src="assets/img/like-icon.svg">
+                    <div class="bubble-container__item">2</div>                    
+                </div>
+                <span class="navbar__name">Подписки</span>
+            </div>
+        </a>
+        <a href="">    
+            <div class="navbar__item">
+                <img class="navbar__img" src="assets/img/history-icon.svg">
+                <span class="navbar__name">История</span>
+            </div>
+        </a>
+        <a href="">    
+            <div class="navbar__item" style="">
+                <img class="navbar__img" src="assets/img/fav-icon.svg">
+                <span class="navbar__name">Закладки</span>
+            </div>
+        </a>              
+    </div>    
+
 
 <script
     src="https://code.jquery.com/jquery-3.3.1.js"

@@ -418,7 +418,7 @@
 </div>
 
 
-    <div class="container navbar">
+    <div class="navbar" style="flex-grow: 0;">
         <a href="">
             <div class="navbar__item">
                 <img class="navbar__img" src="assets/img/play-icon.svg">
@@ -427,7 +427,10 @@
         </a>
         <a href="">    
             <div class="navbar__item">
-                <img class="navbar__img" src="assets/img/like-icon.svg">
+                <div class="bubble-container">
+                    <img class="navbar__img" src="assets/img/like-icon.svg">
+                    <div class="bubble-container__item">2</div>                    
+                </div>
                 <span class="navbar__name">Подписки</span>
             </div>
         </a>
@@ -438,12 +441,13 @@
             </div>
         </a>
         <a href="">    
-            <div class="navbar__item">
+            <div class="navbar__item" style="">
                 <img class="navbar__img" src="assets/img/fav-icon.svg">
                 <span class="navbar__name">Закладки</span>
             </div>
         </a>              
     </div>    
+  
 
 
 <script
