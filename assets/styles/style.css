@@ -46,8 +46,24 @@ button  {
 	cursor: pointer;
 }
 
-button, a, input {
+button, a, input, select, option {
 	outline: none;
+}
+
+option {
+	border-radius: 30px;
+}
+
+select {
+	font-family: "OSB";
+	font-size: 15px;
+	color: #cb0a1d;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: none;
+	cursor: pointer;
+	
 }
 
 .profile-container-menu__item span:hover{
@@ -1111,7 +1127,8 @@ button, a, input {
 		display: none;
 	}
 	.left-menu-mq,
-	.left-menu-100vh {
+	.left-menu-100vh,
+	.profile-container2 {
 		display: none;
 	}
 	.timetable-right {
@@ -1373,46 +1390,6 @@ button, a, input {
 	margin-left: 10px;
 }
 
-.bubble-container {
-	position: relative;
-	display: flex;
-	justify-content: center;
-}
-
-.bubble-container__item {
-	left: 35px;
-	position: absolute;
-	background-color: #cb0a1d;
-    border-radius: 10px;
-    padding-left: 5px;
-    height: 18px;
-    width: 18px;
-    font-size: 12px;
-    color: white;
-    background-color: #cb0a1d;
-}
-
-.bubble-container2 {
-	position: relative;
-	display: flex;
-	justify-content: center;
-}
-
-.bubble-container2__item {
-	left: 32px;
-	position: absolute;
-	background-color: #fff;
-    border-radius: 10px;
-    padding-left: 5px;
-    padding-bottom: 4x;
-    height: 15px;
-    width: 15px;
-    font-size: 12px;
-    color: #cb0a1d;
-}
-
-
-
 .navbar__item2 {
 	display: flex;
 	flex-direction: column;
@@ -1445,3 +1422,165 @@ button, a, input {
 .search-input {
 	margin-right: 10px;
 }
+
+.bubble-container {
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.bubble-container__item {
+	left: 35px;
+	position: absolute;
+	background-color: #cb0a1d;
+    border-radius: 10px;
+    padding-left: 5px;
+    height: 18px;
+    width: 18px;
+    font-size: 12px;
+    color: white;
+    background-color: #cb0a1d;
+}
+
+.bubble-container2 {
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.bubble-container2__item {
+	left: 32px;
+	position: absolute;
+	background-color: #fff;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-bottom: 4px;
+    height: 15px;
+    width: 15px;
+    font-size: 12px;
+    color: #cb0a1d;
+}
+
+
+
+/* Selects */
+/* General Select */
+label.selectGeneral
+{
+    display: block;
+    position: relative;
+    cursor: pointer;
+
+    width: 55px;
+    height: 40px;
+	z-index: 1;
+    font-size: 18px;
+
+    margin: 2px 0;
+    border-radius: 0;
+
+    padding-top: 3px;
+    color: #cb0a1d;
+}
+
+label.selectGeneral:before
+{
+    content: attr(placeholder);
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+	z-index: -1;
+
+    max-width: 100%;
+    height: 34px;
+
+    padding-left: 10px;
+    padding-top: 3px;
+
+    line-height: 34px;
+    white-space: nowrap;
+	font-weight: 700;
+
+    overflow: hidden;
+
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+}
+
+select {
+    -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+
+label.selectGeneral label
+{
+    display: inline-block;
+
+    min-width: 100%;
+    height: 34px;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 34px;
+    white-space: nowrap;
+	text-align: center;
+	color: #cb0a1d;
+	padding-right: 3px;
+	padding-left: 3px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #f2f2f2;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+}
+
+label.selectGeneral input,
+label.selectGeneral label
+{
+    display: none;
+}
+
+label.selectGeneral div
+{
+    min-width: 100%;
+    max-height: 500px;
+
+    overflow-x: hidden;
+}
+
+label.selectGeneral input[type="radio"]:checked ~ div
+{
+    position: absolute;
+    top: 34px;
+    z-index: 999;
+
+    overflow-y: auto;
+    box-shadow: 0 0 12px 2px #d6d6d6;
+}
+
+label.selectGeneral input[type="radio"]:checked ~ div > label,
+label.selectGeneral input[type="radio"]:checked + label
+{
+    display: block;
+}
+
+label.selectGeneral input[type="radio"]:checked ~ div > label:hover
+{
+    background-color: #cb0a1d;
+    color: white;
+    transition: .3s;
+}
+
+label.selectGeneral input[type="radio"]:not(:checked) ~ div > input[type="radio"]:checked + label
+{
+    position: relative;
+    z-index: -1;
+}
+
+
+
+
+
+
+
