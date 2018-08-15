@@ -1,14 +1,14 @@
 
 
 .left-menu {
-	position: relative;
+	top: 0;
+	bottom: 0;
 	width: 35%;
 	box-shadow: 1px 0 16px 1px gray;
-    overflow-y: scroll;
+    overflow-y: auto;
     min-height: 100vh;
 	max-height:100vh;
 }
-
 
 .rm {
 	display: flex;

@@ -285,6 +285,7 @@ select {
 	align-items: center;
 	margin-top: 50px;
 	margin-left: 5px;
+	margin-bottom: 25px;
 }
 
 .reg-btn {
@@ -1128,7 +1129,8 @@ select {
 	}
 	.left-menu-mq,
 	.left-menu-100vh,
-	.profile-container2 {
+	.profile-container2,
+	.profile-container2-content{
 		display: none;
 	}
 	.timetable-right {
@@ -1148,7 +1150,9 @@ select {
 
 
 @media screen and (min-width: 768px) {
-	
+	.right-menu2 {
+		margin-left: 270px;
+	}	
 	.header-container {
 		display: none;	
 	}
