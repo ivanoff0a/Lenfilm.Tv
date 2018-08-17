@@ -38,6 +38,19 @@ body {
     overflow-x: hidden;	
 }
 
+.right-menu3 {
+	padding-top: 20px;
+	padding-bottom: 100px;
+	padding-left: 10px;
+	height: 100vh;
+	    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: flex-start;
+    	align-items: flex-start;	
+}
+
 .reg-btn2 {
 	margin-top: 40px;
 	margin-left: 40px;

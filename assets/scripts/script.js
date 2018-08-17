@@ -1,9 +1,4 @@
 $(document).ready(function() {
-	// var sticky = new Sticky('.selector');
-	// var Sticky = require('sticky-js');
-
-	// var sticky = new Sticky('.selector');
-
 	$(".header__menu").click(function() {
 		$(".sidebar-container").toggleClass("-isOpenSb");
 		$(".bg-container").toggleClass("-isOpenBg");
@@ -45,7 +40,5 @@ $(document).ready(function() {
 			document.location.href = "chrono.html"; 	 
 		}
     };
-
-    // $('.profile-container').fixedsticky(); 
 
 })

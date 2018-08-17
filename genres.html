@@ -3,11 +3,8 @@
 <head>
     <title>ЛенФильм.Тв</title>
     <meta charset="utf-8">
-
-    <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
     <script type="text/javascript">
     function test() {
-        $('profile-img-container-menu>img').toggleClass('cls-2');
         if (screen.width > '768') {
             document.location.href = "chrono-feed-desktop.html";
         }
@@ -26,229 +23,127 @@
         }
     };
     </script>
+    <link rel="stylesheet" type="text/css" href="assets/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/chrono-css.css">    
+    <link rel="stylesheet" type="text/css" href="assets/styles/style-desktop.css">
     <meta name="viewport" content="width=device-width initial-scale=1">
 </head>
 <body>
-
-<div class="container bg-container"></div>
-<div class="container bg-container-search"></div>
- <!-- не войденный проф  -->
-<!-- <div class="container sidebar-container">
-   <div class="profile-container">
-       <div class="profile-container__preview">
-            <div class="profile-img-container">
-                <img src="assets/img/avatar.svg">
-            </div>
-           <h2>Гость</h2>
-       </div>
-<div class="profile-container-menu">
-            <ul>
-                <li>
-                    <div class="profile-container-menu__item">
-                        <div class="profile-img-container-menu">
-                            <img src="assets/img/clapperboard.svg">
-                        </div>
-                        <div>
-                            <span class="choosen">Фильм</span>                                
-                        </div>
-                    </div>  
-                </li>
-                <li>
-                    <a href="">
-                        <div class="profile-container-menu__item">
-                            <div class="profile-img-container-menu">
-                                <img src="assets/img/television.svg">
+    <div class="container sidebar-container">
+       <div class="profile-container">
+            <a href="profile.html">
+                <div class="profile-container__preview">
+                    <div class="profile-img-container">
+                        <img src="assets/img/profile-logo.png">
+                    </div>
+                    <div class="profile-info-container" >
+                        <h3 class="profile-info-container__name">Nickname123456789</h3>
+                        <span>Подписки: <span class="profile-info-container__subs">254</span></span>
+                    </div>
+                </div>
+            </a>    
+            <div class="profile-container-menu">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <div class="profile-container-menu__item">
+                                <div class="profile-img-container-menu">
+                                    <img src="assets/img/clapperboard.svg">
+                                </div>
+                                <div>
+                                    <span style="color: #cb0a1d;"">Фильм</span>                                
+                                </div>
                             </div>
-                            <span>Сериалы</span>
-                        </div>  
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <div class="profile-container-menu__item">
-                            <div class="profile-img-container-menu">   
-                                <img src="assets/img/new.svg">
-                            </div>    
-                            <span>Новинки</span>
-                        </div>  
-                    </a>
-                </li>
-                <li>
-                    <a href="">
+                        </a>      
+                    </li>                
+                    <li>
+                        <a href="">
+                            <div class="profile-container-menu__item">
+                                <div class="profile-img-container-menu">
+                                    <img src="assets/img/television.svg">
+                                </div>
+                                <span>Сериалы</span>
+                            </div>  
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="profile-container-menu__item">
+                                <div class="profile-img-container-menu">   
+                                    <img src="assets/img/new.svg">
+                                </div>    
+                                <span>Новинки</span>
+                            </div>  
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="profile-container-menu__item">
+                                <div class="profile-img-container-menu">
+                                    <img src="assets/img/star.svg">
+                                </div>    
+                                <span>Топ</span>
+                            </div>  
+                        </a>
+                    </li>
+                    <li>
+                        <a href="genres.html">
+                            <div class="profile-container-menu__item">
+                                <div class="profile-img-container-menu">
+                                    <img src="assets/img/theatre.svg">
+                                </div>    
+                                <span>Жанры</span>
+                            </div>  
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="profile-container-menu__item">
+                                <div class="profile-img-container-menu">
+                                    <img src="assets/img/2-squares.svg">
+                                </div>    
+                                <span>Категории</span>
+                            </div>  
+                        </a>
+                    </li>
+                    <li onclick="test()">
                         <div class="profile-container-menu__item">
                             <div class="profile-img-container-menu">
-                                <img src="assets/img/star.svg">
-                            </div>    
-                            <span>Топ</span>
+                                <img src="assets/img/stopwatch.svg">
+                            </div>
+                            <span>Хронология</span>
                         </div>  
-                    </a>
-                </li>
-                <li>
-                    <a href="genres.html">
+                    </li>
+                    <li onclick="test2()">
                         <div class="profile-container-menu__item">
                             <div class="profile-img-container-menu">
-                                <img src="assets/img/theatre.svg">
+                                <img src="assets/img/avatar.svg">
                             </div>    
-                            <span>Жанры</span>
+                            <span>Актеры</span>
                         </div>  
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <div class="profile-container-menu__item">
-                            <div class="profile-img-container-menu">
-                                <img src="assets/img/2-squares.svg">
-                            </div>    
-                            <span>Категории</span>
-                        </div>  
-                    </a>
-                </li>
-                <li onclick="test()">
-                    <div class="profile-container-menu__item">
-                        <div class="profile-img-container-menu">
-                            <img src="assets/img/stopwatch.svg">
-                        </div>
-                        <span>Хронология</span>
-                    </div>  
-                </li>
-                <li onclick="test2()">
-                    <div class="profile-container-menu__item">
-                        <div class="profile-img-container-menu">
-                            <img src="assets/img/avatar.svg">
-                        </div>    
-                        <span>Актеры</span>
-                    </div>  
-                </li>                                                                                        
-            </ul>
-       </div>
-       <div class="reg-container">
-           <div class="reg-container__form">
-                <button class="reg-btn">Вход</button>
-                <button onclick="test3()" class="reg-btn">Регистрация</button>
+                    </li>                                                                                        
+                </ul>
            </div>
-           <div class="reg-container__forgotp">
-                <a href="" class="forgot-password">Забыли пароль ?</a>
+           <div class="info-container">
+                <div class="info-container-links">
+                    <div class="info-container-links__item">
+                        <img class="links-logo" src="assets/img/vk-logo.svg">
+                        <span class="links-text">Наша группа вконтакте</span>
+                    </div>
+                    <div class="info-container-links__item">
+                        <img class="links-logo" src="assets/img/vk-logo.svg">
+                        <span class="links-text">Наша группа вконтакте</span>
+                    </div>                    
+                </div>
+                <div class="info-container-btn">
+                    <button class="reg-btn">Выход</button>
+                </div> 
            </div>
        </div>
-   </div>
-</div> -->
+    </div>
 
-<!-- войденный проф -->
-<div class="container sidebar-container">
-   <div class="profile-container">
-        <a href="profile.html">
-            <div class="profile-container__preview">
-                <div class="profile-img-container">
-                    <img src="assets/img/profile-logo.png">
-                </div>
-                <div class="profile-info-container" >
-                    <h3 class="profile-info-container__name">Nickname123456789</h3>
-                    <span>Подписки: <span class="profile-info-container__subs">254</span></span>
-                </div>
-            </div>
-        </a>    
-        <div class="profile-container-menu">
-            <ul>
-                <li>
-                    <a href="index.html">
-                        <div class="profile-container-menu__item">
-                            <div class="profile-img-container-menu">
-                                <img src="assets/img/clapperboard.svg">
-                            </div>
-                            <div>
-                                <span class="choosen">Фильм</span>                                
-                            </div>
-                        </div>
-                    </a>      
-                </li>
-                <li>
-                    <a href="">
-                        <div class="profile-container-menu__item">
-                            <div class="profile-img-container-menu">
-                                <img src="assets/img/television.svg">
-                            </div>
-                            <span>Сериалы</span>
-                        </div>  
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <div class="profile-container-menu__item">
-                            <div class="profile-img-container-menu">   
-                                <img src="assets/img/new.svg">
-                            </div>    
-                            <span>Новинки</span>
-                        </div>  
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <div class="profile-container-menu__item">
-                            <div class="profile-img-container-menu">
-                                <img src="assets/img/star.svg">
-                            </div>    
-                            <span>Топ</span>
-                        </div>  
-                    </a>
-                </li>
-                <li>
-                    <a href="genres.html">
-                        <div class="profile-container-menu__item">
-                            <div class="profile-img-container-menu">
-                                <img src="assets/img/theatre.svg">
-                            </div>    
-                            <span>Жанры</span>
-                        </div>  
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <div class="profile-container-menu__item">
-                            <div class="profile-img-container-menu">
-                                <img src="assets/img/2-squares.svg">
-                            </div>    
-                            <span>Категории</span>
-                        </div>  
-                    </a>
-                </li>
-                <li onclick="test()">
-                    <div class="profile-container-menu__item">
-                        <div class="profile-img-container-menu">
-                            <img src="assets/img/stopwatch.svg">
-                        </div>
-                        <span>Хронология</span>
-                    </div>  
-                </li>
-                <li onclick="test2()">
-                    <div class="profile-container-menu__item">
-                        <div class="profile-img-container-menu">
-                            <img src="assets/img/avatar.svg">
-                        </div>    
-                        <span>Актеры</span>
-                    </div>  
-                </li>                                                                                        
-            </ul>
-       </div>
-       <div class="info-container">
-            <div class="info-container-links">
-                <div class="info-container-links__item">
-                    <img class="links-logo" src="assets/img/vk-logo.svg">
-                    <span class="links-text">Наша группа вконтакте</span>
-                </div>
-                <div class="info-container-links__item">
-                    <img class="links-logo" src="assets/img/vk-logo.svg">
-                    <span class="links-text">Наша группа вконтакте</span>
-                </div>                    
-            </div>
-            <div class="info-container-btn">
-                <button class="reg-btn">Выход</button>
-            </div> 
-       </div>
-   </div>
-</div>
-
-
-
+    <div class="container bg-container"></div>
+    <div class="container bg-container-search"></div>
 <header>
     <div class="container header-container">
         <div class="header-container__item">
@@ -260,10 +155,12 @@
         </div>  
     </div>
 </header>
-
+<div class="container search-container">  
+    <input class="search-input" type="text" name="" placeholder="Поиск">
+</div> 
 <header>
     <div class="container header-container2">
-        <div class="header-container2__img">
+        <div class="header-container2__img">             
             <img class="header-logo2" src="assets/img/nav-logo.png">
         </div>
         <div class="header-container2__navbar">
@@ -300,17 +197,10 @@
         </div>    
     </div>
 </header>
-
-
-<div class="container search-container">  
-    <input class="search-input" type="text" name="" placeholder="Поиск">
-</div> 
-
-<div class="desktop-menu-mq">
-        <div class="left-menu-100vh">
-                <div class="profile-container">
+        <div class="profile-container2">
+            <div class="profile-container2-content">
                 <a href="profile.html">
-                    <div class="profile-container__preview">
+                   <div class="profile-container__preview">
                         <div class="profile-img-container">
                             <img src="assets/img/profile-logo.png">
                         </div>
@@ -318,8 +208,8 @@
                             <h3 class="profile-info-container__name">Nickname123456789</h3>
                             <span>Подписки: <span class="profile-info-container__subs">254</span></span>
                         </div>
-                    </div>
-                </a>   
+                   </div>
+                </a>  
                 <div class="profile-container-menu">
                     <ul>
                         <li>
@@ -401,8 +291,8 @@
                             </div>  
                         </li>                                                                                        
                     </ul>
-               </div>
-               <div class="info-container">
+                </div>
+                <div class="info-container">
                     <div class="info-container-links">
                         <div class="info-container-links__item">
                             <img class="links-logo" src="assets/img/vk-logo.svg">
@@ -413,13 +303,13 @@
                             <span class="links-text">Наша группа вконтакте</span>
                         </div>                    
                     </div>
-                    <div class="info-container-btn">
-                        <button class="reg-btn">Выход</button>
+                    <div>
+                        <button class="reg-btn reg-btn2">Выход</button>
                     </div> 
-               </div>
-           </div>
+                </div>
+            </div>
         </div>
-        <div class="right-menu-mq">
+        <div class="right-menu2">
             <div class="container title-container">
                 <div class="title-container__img">
                     <img src="assets/img/theatre.svg">    
@@ -545,10 +435,8 @@
                     </li>
                 </ul>                                                                                                            
             </div>            
+        </div>    
         </div>   
-    </div>
-
-
     <div class="navbar" style="flex-grow: 0;">
         <a href="">
             <div class="navbar__item">
@@ -576,10 +464,7 @@
                 <img class="navbar__img" src="assets/img/fav-icon.svg">
                 <span class="navbar__name">Закладки</span>
             </div>
-        </a>              
-    </div>    
-
-
+        </a>
 <script
     src="https://code.jquery.com/jquery-3.3.1.js"
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
