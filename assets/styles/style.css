@@ -840,6 +840,7 @@ select {
 	transition: .3s;
 }
 
+
 /*Профиль*/
 
 .profile-page-container {
@@ -1033,8 +1034,8 @@ select {
 	align-items: center;
 	margin-right: 20px;
 	margin-top: 30px;
-
 }
+
 
 .actors-container__item span {
 	color: black;
@@ -1347,7 +1348,7 @@ select {
 		height: 200px;
 	}
 }
-
+   
 
 @media screen and (min-width: 1024px) {
 	.year-col {
@@ -1374,6 +1375,9 @@ select {
 	.above-1024px {
 		display: block;
 	}	
+	.movie-container__info div {
+		margin-top: 5px;
+	}
 }
 
 @media screen and (min-width: 1440px) {
@@ -1419,11 +1423,6 @@ select {
 	.actor-img {
 		height: 160px;
 	}
-
-	.movie-container__info div {
-		margin-top: 5px;
-	}
-
 }
 @media screen and (min-width: 1920px) {
 	.year-col {
@@ -1436,9 +1435,6 @@ select {
 	.desktop-vid {
 		height: 500px;
 		width: 800px;
-	}
-	.film-container {
-
 	}
 	
 	.film-all-container {
@@ -1469,6 +1465,9 @@ select {
 	}
 	.actor-container-left {
 		margin-left: 50px;
+	}
+	.letter-container {
+		margin-right: 100px;
 	}
 }
 

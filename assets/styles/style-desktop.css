@@ -117,7 +117,7 @@
 
 .film-container {
 	display: flex;
-	flex-direction: column;
+	justify-content: space-around;	
 }
 
 .actor-container {
@@ -128,7 +128,7 @@
 .film-all-container {	
 	width: 100%;
 	display: flex;
-	justify-content: space-around;
+	flex-direction: column;	
 }	
 
 .actor-all-container {
@@ -156,15 +156,33 @@
 		display: flex;
 		flex-direction: column;	
 	}
-	.video-container {
+	.desktop-vid {
+		height: 200px;
+	}
+	.film-container {
+		flex-direction: column;
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.desktop-vid {
+		height: 300px;
+	}
+}
+
+@media screen and (min-width: 425px) {
+	.desktop-vid {
 		height: 250px;
 	}
-}	
+}		
 
 @media screen and (max-width: 768px) {
 	.letter-container {
 		display: flex;
 		justify-content: center;	
+	}
+	.desktop-vid {
+		margin-right: 10px;
 	}
 }
 @media screen and (min-width: 768px) {
@@ -204,7 +222,8 @@
 	}
 	.letter-container {
 		display: flex;
-		justify-content: center;	
+		justify-content: center;
+		margin-bottom: 40px;	
 	}
 	.main-info-container__img img {
 		height: 250px;
@@ -288,9 +307,6 @@
 		align-items: center;
 	}
 
-	.film-all-container {
-		margin-left: 200px;
-	}	
 	.desktop-vid {
 		height: 400px;
 	}
@@ -346,11 +362,10 @@
 	justify-content: center;
 	-ms-align-items: center;
 	align-items: center;
+	margin-bottom: 20px;
 }
 
-.desktop-vid img {
 
-}
 
 .download-btn-container-desk {
 	display: flex;
