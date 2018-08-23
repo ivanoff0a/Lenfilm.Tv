@@ -447,12 +447,12 @@ select {
 
 .adv-logo {
 	height: 75px;
+	margin-right: 10px;
 } 
 
 .adv-container {
 	display: flex;
 	justify-content: center;
-	margin-top: 10px;
 }
 
 .timetable-container {
@@ -474,6 +474,7 @@ select {
 	border: 2px solid #cb0a1d;
 	border-radius: 10px;
 	padding: 10px;
+	width: 100%;
 }
 
 .timetable-container__item span{
@@ -531,8 +532,17 @@ select {
 
 .timetable-container-mq {
 	display: flex;
-	justify-content: center;
+	flex-direction: row;
 	margin-top: 10px;
+}
+
+.timetable-container-mq__item {
+	display: flex;
+	width: 100%;
+}
+
+.timetable-container__item {
+	width: 50%;
 }
 
 
@@ -695,6 +705,7 @@ select {
 
 
 /*Третий экран*/
+
 
 .movie-container__update2 {
 	margin-top: 10px;
@@ -1109,6 +1120,21 @@ select {
 	width: 150px;		
 }
 
+	
+.timetable-left {
+	margin-right: 10px;
+}
+
+@media screen and (max-width: 480px) {
+	.timetable-container-mq__item {
+		flex-direction: column;
+	}
+	.timetable-container__item {
+		width: 100%;
+	}
+}
+
+
 @media screen and (max-width: 320px) {
 	.movie-all-container-desk span {
 		font-size: 11px;
@@ -1122,6 +1148,11 @@ select {
 	}	
 }
 
+@media screen and (max-width: 1024px) {
+	.movie-container__update {
+		margin-bottom: 15px;
+	}
+}
 @media screen and (max-width: 425px) {
 
 	.film-all-container {
@@ -1167,14 +1198,7 @@ select {
 	.profile-container2,
 	.profile-container2-content{
 		display: none;
-	}
-	.timetable-right {
-		display: none;
-	}
-
-	.timetable-container-mq__item {
-		width: 100%;
-	}		
+	}	
 	.under-768px {
 		display: block;
 	}
@@ -1216,17 +1240,6 @@ select {
 	.right-menu-mq {
 		margin-top: 15px;
 		margin-left: 15px;
-	}
-	
-	.timetable-container-mq__item  {
-		width: 50%;
-	}
-	.timetable-left {
-		margin-right: 20px;
-	}
-
-	.timetable-right {
-		margin-left: 20px;
 	}
 	.under-768px {
 		display: none;
@@ -1465,9 +1478,6 @@ select {
 	}
 	.actor-container-left {
 		margin-left: 50px;
-	}
-	.letter-container {
-		margin-right: 100px;
 	}
 }
 
